@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS question;
+
+CREATE TABLE question (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    body TEXT NOT NULL
+);
