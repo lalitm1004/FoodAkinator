@@ -121,5 +121,7 @@ class Database:
         self.question = QuestionTable(self.conn)
         self.answer = AnswerTable(self.conn)
 
-    def close(self) -> None:
-        self.conn.close()
+    def __del__(self) -> None:
+        if hasattr(self, "conn") and self.conn:
+            self.conn.close()
+
