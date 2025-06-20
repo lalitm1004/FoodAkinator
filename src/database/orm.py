@@ -1,26 +1,7 @@
 import sqlite3
-from dataclasses import dataclass
 from typing import List, Optional
 
-
-@dataclass
-class FoodItem:
-    id: int
-    name: str
-    outlet: str
-
-
-@dataclass
-class Question:
-    id: int
-    body: str
-
-
-@dataclass
-class Answer:
-    food_item_id: int
-    question_id: int
-    value: int
+from models import Answer, FoodItem, Question
 
 
 class FoodItemTable:
