@@ -1,5 +1,8 @@
+from database.engine import init_db
+
+
 def main():
-    print("Hello from foodakinator!")
+    init_db()
 
 
 if __name__ == "__main__":

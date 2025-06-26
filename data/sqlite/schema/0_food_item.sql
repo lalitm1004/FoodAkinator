@@ -1,7 +1,0 @@
-DROP TABLE IF EXISTS food_item;
-
-CREATE TABLE food_item (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    outlet TEXT NULL
-);
